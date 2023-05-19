@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <q-layout view="lHh Lpr lFf">
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+  </q-layout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SigninSignup from "@/views/SigninSignup.vue";
+import SignUp from "@/views/SignUp.vue";
+import FullDashBoard from "@/views/FullDashBoard.vue";
+import MarketPlace from "@/views/MarketPlace.vue";
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    // eslint-disable-next-line vue/no-unused-components
+    SigninSignup,
+    // eslint-disable-next-line vue/no-unused-components
+    SignUp,
+    // eslint-disable-next-line vue/no-unused-components
+    FullDashBoard,
+    // eslint-disable-next-line vue/no-unused-components
+    MarketPlace
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
